@@ -1,3 +1,7 @@
 baseURL = 'https://bobbynewman.co.uk/'
 locale = 'en-gb'
 title = 'Bobby Newman'
+
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
