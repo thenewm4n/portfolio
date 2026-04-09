@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Bobby Newman</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Bobby Newman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>bobby.newman1@proton.me (Bobby Newman)</managingEditor>
+    <webMaster>bobby.newman1@proton.me (Bobby Newman)</webMaster>
+    
+    <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Within the laws of physics, anything is possible</title>
+      <link>http://localhost:1313/posts/within_the_laws_of_physics/</link>
+      <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+      <author>bobby.newman1@proton.me (Bobby Newman)</author>
+      <guid>http://localhost:1313/posts/within_the_laws_of_physics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Revolutionising game funding</title>
+      <link>http://localhost:1313/posts/revolutionising_game_funding/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <author>bobby.newman1@proton.me (Bobby Newman)</author>
+      <guid>http://localhost:1313/posts/revolutionising_game_funding/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Adversity sparks growth</title>
+      <link>http://localhost:1313/posts/adversity_sparks_growth/</link>
+      <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
+      <author>bobby.newman1@proton.me (Bobby Newman)</author>
+      <guid>http://localhost:1313/posts/adversity_sparks_growth/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Living with intention</title>
+      <link>http://localhost:1313/posts/living_with_intention/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <author>bobby.newman1@proton.me (Bobby Newman)</author>
+      <guid>http://localhost:1313/posts/living_with_intention/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
