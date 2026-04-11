@@ -2,16 +2,18 @@
 title: "Home"
 ---
 
+---
 ### Featured Project
-**[BareBones Engine]({{< ref "projects/barebonesengine" >}})** *A custom 2D game engine built entirely from scratch in C++.*
+
+**[BareBones Engine]({{< ref "projects/barebonesengine" >}})** - A 2D game engine built from scratch in C++.
 
 ---
 
 ### Recent Writing
-[Within the laws of physics, anything is possible]({{< ref "posts/within_the_laws_of_physics" >}})
+[Within the laws of physics]({{< ref "writing/within_the_laws_of_physics" >}})
 
-[Revolutionising game funding]({{< ref "posts/revolutionising_game_funding" >}})
+[Revolutionising game funding]({{< ref "writing/revolutionising_game_funding" >}})
 
-[Adversity sparks growth]({{< ref "posts/adversity_sparks_growth" >}})
+[Adversity sparks growth]({{< ref "writing/adversity_sparks_growth" >}})
 
-[Living with intention]({{< ref "posts/living_with_intention" >}})
+[Living with intention]({{< ref "writing/living_with_intention" >}})

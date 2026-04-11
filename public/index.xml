@@ -5,38 +5,38 @@
     <link>http://localhost:1313/</link>
     <description>Recent content in Home on Bobby Newman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-gb</language>
     <managingEditor>bobby.newman1@proton.me (Bobby Newman)</managingEditor>
     <webMaster>bobby.newman1@proton.me (Bobby Newman)</webMaster>
     
     <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Within the laws of physics, anything is possible</title>
-      <link>http://localhost:1313/posts/within_the_laws_of_physics/</link>
+      <title>Within the laws of physics</title>
+      <link>http://localhost:1313/writing/within_the_laws_of_physics/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
       <author>bobby.newman1@proton.me (Bobby Newman)</author>
-      <guid>http://localhost:1313/posts/within_the_laws_of_physics/</guid>
+      <guid>http://localhost:1313/writing/within_the_laws_of_physics/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Revolutionising game funding</title>
-      <link>http://localhost:1313/posts/revolutionising_game_funding/</link>
+      <link>http://localhost:1313/writing/revolutionising_game_funding/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
       <author>bobby.newman1@proton.me (Bobby Newman)</author>
-      <guid>http://localhost:1313/posts/revolutionising_game_funding/</guid>
+      <guid>http://localhost:1313/writing/revolutionising_game_funding/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Adversity sparks growth</title>
-      <link>http://localhost:1313/posts/adversity_sparks_growth/</link>
+      <link>http://localhost:1313/writing/adversity_sparks_growth/</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
       <author>bobby.newman1@proton.me (Bobby Newman)</author>
-      <guid>http://localhost:1313/posts/adversity_sparks_growth/</guid>
+      <guid>http://localhost:1313/writing/adversity_sparks_growth/</guid>
       <description></description>
       
     </item>
@@ -53,10 +53,20 @@
     
     <item>
       <title>Living with intention</title>
-      <link>http://localhost:1313/posts/living_with_intention/</link>
+      <link>http://localhost:1313/writing/living_with_intention/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
       <author>bobby.newman1@proton.me (Bobby Newman)</author>
-      <guid>http://localhost:1313/posts/living_with_intention/</guid>
+      <guid>http://localhost:1313/writing/living_with_intention/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>bobby.newman1@proton.me (Bobby Newman)</author>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
       
     </item>

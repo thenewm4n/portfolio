@@ -4,20 +4,20 @@ none = "none"
 [[main]]
 name = "About"
 pageRef = "about"
-identifier = "uyk2F2xktk"
-weight = 1
+identifier = "oXIjbK0uzT"
+weight = 9_999
 
 [[main]]
 name = "Projects"
 pageRef = "projects"
-identifier = "bi767Ixz0J"
-weight = 2
+identifier = "zEokRkTeZj"
+weight = 9_999
 
 [[main]]
-name = "Posts"
-pageRef = "posts"
-identifier = "Mw72RdDwjI"
-weight = 3
+name = "Writing"
+pageRef = "writing"
+identifier = "VkWGeNX9GD"
+weight = 9_999
 
 [[footer]]
 none = "none"

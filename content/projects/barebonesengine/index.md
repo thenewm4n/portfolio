@@ -4,30 +4,15 @@ date: 2024-08-13
 draft: false
 ---
 
+
 ## What, and Why?
-Ever wondered what makes Unreal Engine, Unity, or Godot tick? That curiosity sparked my adventure into crafting a 2D game engine in C++. Inspired by Dave Churchill's lectures at Memorial University, I set out to demystify the magic behind game development.
+Ever since playing my first games 20 years ago, I wondered about the magic behind games. This engine was an attempt at understanding them, from the bottom-up.
 
 ---
 ## Architecture
-The engine uses an entity-component-system (ECS) architecture:
-* **Entities** are the actors on your game's stage; game objects which can possess components.
-* **Components** are the building blocks that give entities their unique traits; structures of data (and sometimes, functions) attached to each entity.
-* **Systems** are the directors orchestrating how entities behave based on their components; functions that enact the game logic on each entity according to their components' data. 
+My engine uses a simplified entity-component-system (ECS) architecture. Entities are objects of the Entity class which hold a tuple of Component objects - each Component class composed almost entirely of data. Systems modifying this data are implemented per-scene, keeping game logic self-contained.
 
-For example, take the **Player entity**. It has components like **Input**, **Transform**, and **Animation**. The Input component stores key presses (e.g., pressing 'up' makes "up" true), and the Movement system, called every game frame, reads those inputs, updates the player’s velocity (from the Transform component), and changes their position according to this velocity.
-
-```cpp
-void ScenePlatformer::spawnPlayer()
-{
-    m_player = m_entityManager.addEntity("Player");
-    m_player->addComponent<CInput>();
-    m_player->addComponent<CBody>(Vec2f(m_playerConfig.BB_WIDTH, m_playerConfig.BB_HEIGHT), 1.0f);
-    m_player->addComponent<CAnimation>(m_game->getAssets().getAnimation("ArcherIdle"), true);
-    // More components ...
-}
-```
-
-I opted for ECS over traditional object-oriented architecture for its modularity, performance, and flexibility. Unlike the rigid class hierarchies of OOP, ECS separates the “what” (components) from the “how” (systems), making it much easier to extend and maintain, while keeping memory and CPU usage efficient.
+I chose ECS over a traditional OOP hierarchy for two reasons. Firstly, it avoids the fragile base-class problem: adding a new behaviour involves writing a new component and system, not modifying an inheritance chain. Secondly, it improves cache coherency by keeping component data grouped in contiguous memory, reducing cache misses when systems iterate over large entity counts.
 
 ---
 ## Core Components
@@ -37,22 +22,6 @@ The scene management system organises the various states of the game, such 
 Each scene is derived from a base Scene class, which provides essential functionality like action registration and rendering. The GameEngine class maintains a map of available scenes, allowing for quick access and dynamic changes. When transitioning between scenes, the `changeScene()` method of the GameEngine class updates the current scene and ensures that the new scene is properly initialised.
 
 This modular design not only enhances organisation but also simplifies the addition of new scenes, making it easier to expand a game’s content.
-
-```cpp
-void GameEngine::changeScene(const std::string& sceneName, std::shared_ptr<Scene> scene)
-{
-    m_sceneMap[sceneName] = scene;
-    m_currentScene = sceneName;
-}
-```
-
-```cpp
-void GameEngine::update()
-{
-	sUserInput();
-	getCurrentScene()->update();   // 
-}
-```
 
 
 ### Input Handling with Action System
@@ -108,7 +77,7 @@ For example, pressing the left or right keys modifies the horizontal veloci
 The system also incorporates gravity, which continuously affects the vertical velocity of the player, ensuring realistic movement dynamics.
 
 ### Collision System
-{{< video src="/vids/collisions.mp4" autoplay="true" loop="true" muted="true" >}}
+{{< video src="collisions.mp4" autoplay="true" loop="true" muted="true" >}}
 
 The collision system is crucial for maintaining the integrity of the game world by preventing entities from overlapping inappropriately. It employs an axis-aligned bounding box (AABB) approach to detect collisions between entities.
 
@@ -160,10 +129,10 @@ for (size_t i = 0; i < entityCount; ++i)
 
 
 ### Animation System
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    {{< video src="/vids/run.mp4" autoplay="true" loop="true" muted="true" >}}
-    {{< video src="/vids/jump.mp4" autoplay="true" loop="true" muted="true" >}}
-</div>
+{{< gallery >}}
+  {{< video src="run.mp4" muted="true" loop="true" autoplay="true">}}
+  {{< video src="jump.mp4" muted="true" loop="true" autoplay="true">}}
+{{< /gallery >}}
 
 The animation system is designed to provide smooth and dynamic character movements. Each entity can have an Animation component that stores the current animation and its properties, such as whether it should loop. Player animations are linked to the player's State component, which can take values including running, jumping, or shooting, ensuring that the correct animation plays in response to player actions.
 
@@ -238,8 +207,8 @@ for (auto entity : entities)
 Additionally, the system includes options for debugging, such as rendering bounding boxes and a grid, which can be toggled on or off:
 
 <div class="media-container">
-    <img src="static/images/bboxes.png" alt="Bounding Box Rendering">
-	<img src="static/images/grid.png" alt="Grid Rendering">
+    <img src="bboxes.png" alt="Bounding Box Rendering">
+	<img src="grid.png" alt="Grid Rendering">
 </div>
 
 ---

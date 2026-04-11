@@ -9,25 +9,25 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/writing/within_the_laws_of_physics/</loc>
     <lastmod>2025-02-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/within_the_laws_of_physics/</loc>
+    <loc>http://localhost:1313/writing/</loc>
     <lastmod>2025-02-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/revolutionising_game_funding/</loc>
+    <loc>http://localhost:1313/writing/revolutionising_game_funding/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/adversity_sparks_growth/</loc>
+    <loc>http://localhost:1313/writing/adversity_sparks_growth/</loc>
     <lastmod>2024-08-13T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -45,7 +45,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/living_with_intention/</loc>
+    <loc>http://localhost:1313/writing/living_with_intention/</loc>
     <lastmod>2024-02-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

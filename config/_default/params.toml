@@ -1,5 +1,5 @@
 colorScheme = "colours"
-defaultAppearance = "dark"
+defaultAppearance = "light"
 autoSwitchAppearance = true
 enableA11y = false
 enableSearch = true
@@ -44,7 +44,7 @@ layoutBackgroundBlur = false
 disableHeroImageFilter = false
 
 [article]
-showDate = false
+showDate = true
 showViews = false
 showLikes = false
 showDateOnlyInArticle = true
